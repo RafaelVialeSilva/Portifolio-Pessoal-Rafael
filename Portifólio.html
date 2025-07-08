@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+
+        /* Para que tudo fique proporcional */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Para esse usarei row para que um fique ao lado do outro */
+
+        body{
+            background-color: rgb(98, 224, 182);
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: normal;
+        }
+
+        /* Cabeçalho com o título e menu, usei o border radius para arredondar a borda e o max width com text align center para arrumar os itens dentro */
+        .topo {
+            background-color: #7e7d7d;
+            color: aquamarine;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        /* Pensei em fazer esse titulo diferente para demonstrar como é legal usar uma borda como um balão de titulo */
+
+        .titulo{
+            padding: 20px;
+            background-color: #7e7d7d;
+            color: #242323;
+            border-radius: 7px;
+        }
+
+        #nome{
+            color: aquamarine;
+            margin: 10px;
+        }
+
+        /* Vou usar esse padrão nas 4 paginas, onde utilizo o codigo que foi ensinado em aula */
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(230, 230, 230);
+            width: 200px;
+            border-radius: 9px;
+        }
+
+    
+        li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover{
+            background-color: #555;
+            color: white;
+        }
+
+        li{
+            text-decoration: none;
+        }
+
+        /* Ultilizarei esse tamanho todo para caber tudo dentro da pagina */
+
+        main{
+            width: 1200px;
+            height: 800px;
+            margin: 50px;
+            padding: 15px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 500px;
+            padding: 10px;
+        }
+
+        /* Pensei em fazer um desing mais criativo para os links e criei uma class trabalho para modificalos */
+
+        .trabalho {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 700px;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .trabalho h2 {
+            margin-top: 0;
+        }
+
+        .trabalho a {
+            color: #0d47a1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .trabalho a:hover {
+            text-decoration: underline;
+            color: purple;
+        }
+
+    </style>
+    </head>
+
+<body>
+
+  <header class=" titulo topo">
+    <h1>Meu Portifólio</h1>
+    <h1 id="nome">Rafael Viale da Silva</h1>
+
+  <nav>
+        <ul>
+        <li><a href="http://127.0.0.1:5500/SobreMim.html">Sobre mim</a></li>
+        <li><a href="http://127.0.0.1:5500/Forma%C3%A7%C3%A3o.html">Formação</a></li>
+        <li><a href="http://127.0.0.1:5500/Portif%C3%B3lio.html">Portifólio</a></li>
+        <li><a href="http://127.0.0.1:5500/Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+
+  <main>
+    <section class="trabalho">
+      <h2> Trabalho criação de modelo REM</h2>
+      <p>Modelo criado apartir de Figjam.</p>
+      <img a src="REM.png" alt="Diagrama REM">
+    </section>
+
+    <section class="trabalho">
+      <h2> Formulario </h2>
+      <p> Criei um formulario basico usando HTML e CSS </p>
+      <a href="https://github.com/KyleBRofc/Portif-lio-pessoal/blob/543c40cad8a078bc8ba7c5cb452d9378fd85d681/Formulario.html" target="_blank">Ver codigo no GitHub</a>
+    </section>
+  </main>
+
+</body>
+</html>

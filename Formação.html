@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+
+        /* Também quero usar o padrão de body em todos */
+
+        body{
+            background-color: rgb(191, 207, 207);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #nome{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: #555;
+            color: #ddd;
+        }
+
+        /* Usei .conteiner para centralizar a imagem o menu e o nome */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: beige; /* bege só no centro */
+            padding: 30px;
+            border-radius: 8px;
+        }   
+
+        /* Vou usar esse padrão nas 4 paginas */
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(230, 230, 230);
+            width: 200px;
+        }
+
+    
+        li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover{
+            background-color: #555;
+            color: white;
+        }
+
+        li{
+            text-decoration: none;
+        }
+
+        /* Criei uma class para personalizar as listas de formação */
+
+        .ul{
+            background-color: white;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* Dei uma personalização mais formal, com um modelo de curriculo */
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 700px;
+        }
+
+        h2 {
+            color: rgb(36, 33, 33);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+    </style>
+<body>
+
+  <header>
+    <h1>Formação Academica</h1>
+    <h1 id="nome">Rafael Viale da Silva</h1>
+  </header>
+
+    <nav>
+        <ul>
+        <li><a href="http://127.0.0.1:5500/SobreMim.html">Sobre mim</a></li>
+        <li><a href="http://127.0.0.1:5500/Forma%C3%A7%C3%A3o.html">Formação</a></li>
+        <li><a href="http://127.0.0.1:5500/Portif%C3%B3lio.html">Portifólio</a></li>
+        <li><a href="http://127.0.0.1:5500/Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <section>
+      <h2> Formação Acadêmica</h2>
+      <h3>Curso Superior em Análise e Desenvolvimento de Sistemas UNINTER (2024 - 2027)</h3>
+    </section>
+
+    <section>
+      <h2> Cursos </h2>
+      <ul class="ul">
+        <li> Phyton </li>
+        <li> CSS </li>
+        <li> JavaScript</li>
+        <li>Banco de Dados</li>
+        <li> SQL </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2> Idiomas</h2>
+      <ul class="ul">
+        <li>Português – Nativo</li>
+        <li>Inglês – Intermediário</li>
+        <li>Italiano – Avançado</li>
+        <li>Alemão – Iniciante</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

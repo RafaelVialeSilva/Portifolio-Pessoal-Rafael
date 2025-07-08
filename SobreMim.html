@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <style>
+            /* Eu defini as bordas pretas e ajudou a alinhar todos os intens */
+        body{
+            background-color: black;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+            /* Eu quis fazer um nome padrão de portifólio */
+
+        #nome{
+            width: 29rem;
+            font-size: 50px;
+            float: right;
+            padding: 15px;
+            background-color: cornflowerblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        /* Ajustei a imagem para ficar prorpocional ao menu e deixei ao canto esquerdo*/
+
+        #img{
+            width: 200px;
+            float: left;
+            border-radius: 100%;
+            background-color: cornflowerblue;
+        }
+        
+        /* Usei .conteiner para centralizar a imagem o menu e o nome */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: beige; /* bege só no centro */
+            padding: 30px;
+            border-radius: 8px;
+        }   
+
+        .texto{
+            margin: 14px;
+        }
+
+        /* Criei o menu de navegação bem feito como ensinado nas aulas */
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(230, 230, 230);
+            width: 200px;
+        }
+
+    
+        li a{
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover{
+            background-color: #555;
+            color: white;
+        }
+
+        li{
+            text-decoration: none;
+        }
+
+        /* Criei aquele texto com o fundo decorativo, tive a ideia de inovar alinhando o background do main com a border do p */
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 60%;
+        }
+
+        p{
+            padding: 65px;
+            border: 1px solid black;
+            border-radius: 100%;
+            font-size: 20px;
+            background-color: gainsboro;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <heaedr>
+        <h1>Portifólio Pessoal - Sobre mim</h1>
+    </header>
+    <h1 id="nome">Rafael Viale da Silva</h1>
+
+    <div><img id="img" a src="Imagem do WhatsApp de 2025-05-17 à(s) 17.34.58_1582e4dc.jpg"></div>
+    
+    
+    <nav>
+        <ul>
+        <li><a href="http://127.0.0.1:5500/SobreMim.html">Sobre mim</a></li>
+        <li><a href="http://127.0.0.1:5500/Forma%C3%A7%C3%A3o.html">Formação</a></li>
+        <li><a href="http://127.0.0.1:5500/Portif%C3%B3lio.html">Portifólio</a></li>
+        <li><a href="http://127.0.0.1:5500/Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div>
+        <p>
+            Eu gosto de praticar esportes, artes marciais e meditar.
+            <br>
+            Não tenho uma religião específica, mas sigo a cristo enquanto levo um estilo de vida budista.
+            <br>
+            Toco violão e assisto filmes no meu tempo livre, tenho um gato e um cachorro.
+            <br>
+            Gosto de ler no meu tempo livre, principalmente livros religiosos, mas também de estudos.
+            <br>
+            Sempre gostei de fazer amigos, mas sempre ser fiél às minhas convicções.
+        </p>
+    </div>
+    </div>
+    </main>
+    <h3></h3>
+</body>
+</html>
